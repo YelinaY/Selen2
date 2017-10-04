@@ -1,0 +1,483 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>17</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>13</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" cellspacing="1" cellpadding="1" border="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">1. login</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">2. CreateNewCoupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">3. SearchRemove</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">4. AssertNotTable</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">4. logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">1. login.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/auth/login/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForPageToLoad</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=section#page input[name='email']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>sendKeys</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>sendKeys</td>
+	<td>css=section#page input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=section#page input[name='remember']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>css=section#page button[type='submit']</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">2. CreateNewCoupon.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CreateNewCoupon</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>css=a[href='#collapseOne'] </td>
+	<td>eShop</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>link=eShop</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForText</td>
+	<td>link=Coupons</td>
+	<td>Coupons</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAtAndWait</td>
+	<td>link=Coupons</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForText</td>
+	<td>css=#content a.btn.btn-primary.pull-right</td>
+	<td>New</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>css=#content a.btn.btn-primary.pull-right</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=#content a.btn.btn-primary.pull-right</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForText</td>
+	<td>css=#crud h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>sendKeys</td>
+	<td>id=name</td>
+	<td>Green</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>name=valid_date</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>name=valid_date</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=table th.next</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=table th.next</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=div.alert.alert-success</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>verifyText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>Ã? SuccessCoupon Green created</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">3. SearchRemove.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SearchRemove</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>verifyText</td>
+	<td>css=button[type='submit']</td>
+	<td>Search</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>sendKeys</td>
+	<td>name=name</td>
+	<td>Green</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>css=button[type='submit']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>verifyTable</td>
+	<td>//div[@id='content']//table.1.0</td>
+	<td>Green</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=i.glyphicon.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert button.confirm</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>css=div.sweet-alert button.confirm</td>
+	<td>Yes, definitely!</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=div.sweet-alert button.confirm</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementNotPresent</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">4. AssertNotTable.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">4. AssertElementNotPresent</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/Coupon?name=Green</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>sendKeys</td>
+	<td>name=name</td>
+	<td>Green</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>css=button[type='submit']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertNotTable</td>
+	<td>//div[@id='content']//table.1.0</td>
+	<td>Green</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">4. logout.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">logout</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/Coupon?name=Green</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=a[data-toggle='dropdown']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertTitle</td>
+	<td>Login - Open eShop Demo</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>css=div.page-header &gt; h1</td>
+	<td>Login</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/1.%20login.html
+info: Executing: |open | /oc-panel/auth/login/ |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForPageToLoad | 4000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=section#page input[name=&apos;email&apos;] |  |
+info: Executing: |sendKeys | css=section#page input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Executing: |sendKeys | css=section#page input[name=&apos;password&apos;] | demo |
+info: Executing: |clickAt | css=section#page input[name=&apos;remember&apos;] |  |
+info: Executing: |clickAndWait | css=section#page button[type=&apos;submit&apos;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/2.%20CreateNewCoupon.html
+info: Executing: |open | /oc-panel |  |
+info: Executing: |assertText | css=a[href=&apos;#collapseOne&apos;] | eShop |
+info: Executing: |clickAt | link=eShop |  |
+info: Executing: |waitForText | link=Coupons | Coupons |
+info: Executing: |clickAtAndWait | link=Coupons |  |
+info: Executing: |waitForText | css=#content a.btn.btn-primary.pull-right | New |
+info: Executing: |assertElementPresent | css=#content a.btn.btn-primary.pull-right |  |
+info: Executing: |clickAt | css=#content a.btn.btn-primary.pull-right |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForText | css=#crud h1 | Create coupon |
+info: Executing: |assertElementPresent | id=name |  |
+info: Executing: |sendKeys | id=name | Green |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | name=valid_date |  |
+info: Executing: |assertElementPresent | name=valid_date |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAt | css=table th.next |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAt | css=table th.next |  |
+info: Executing: |assertElementPresent | name=submit |  |
+info: Executing: |clickAndWait | name=submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=div.alert.alert-success |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyText | css=div.alert.alert-success | Ã? SuccessCoupon Green created |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/3.%20SearchRemove.html
+info: Executing: |open | /oc-panel/Coupon |  |
+info: Executing: |verifyText | css=button[type=&apos;submit&apos;] | Search |
+info: Executing: |sendKeys | name=name | Green |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=button[type=&apos;submit&apos;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyTable | //div[@id=&apos;content&apos;]//table.1.0 | Green |
+info: Executing: |clickAt | css=i.glyphicon.glyphicon-trash |  |
+info: Executing: |waitForElementPresent | css=div.sweet-alert.showSweetAlert.visible |  |
+info: Executing: |waitForElementPresent | css=div.sweet-alert button.confirm |  |
+info: Executing: |assertText | css=div.sweet-alert button.confirm | Yes, definitely! |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAt | css=div.sweet-alert button.confirm |  |
+info: Executing: |waitForElementNotPresent | css=div.sweet-alert.showSweetAlert.visible |  |
+info: Starting test /selenium-server/tests/4.%20AssertNotTable.html
+info: Executing: |type | name=name |  |
+info: Executing: |open | /oc-panel/Coupon?name=Green |  |
+info: Executing: |clickAt | name=name |  |
+info: Executing: |sendKeys | name=name | Green |
+info: Executing: |clickAndWait | css=button[type=&apos;submit&apos;] |  |
+info: Executing: |assertNotTable | //div[@id=&apos;content&apos;]//table.1.0 | Green |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/4.%20logout.html
+info: Executing: |open | /oc-panel/Coupon?name=Green |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAt | css=a[data-toggle=&apos;dropdown&apos;] |  |
+info: Executing: |waitForElementPresent | link=Logout |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertElementPresent | link=Logout |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |assertTitle | Login - Open eShop Demo |  |
+info: Executing: |assertText | css=div.page-header &gt; h1 | Login |
+</pre></body></html>
